@@ -1,11 +1,8 @@
-var ch = prompt("Entery Any Value");
+var arr = [0,1];
 
-if(ch >= 'A'  && ch <='Z'){
-    alert("Given input is a Upper Case Letter")
-}
-else if(ch >= 'a'  && ch <='z'){
-    alert("Given input is a Lower Case Letter")
-}
-else{
-    alert("Given input is a Number")
-}
+for(var i=0; i< arr.length; i++){
+    for(var j=0; j< arr.length; j++){
+      document.write(arr[j] + " " )
+    }
+    document.write(arr[i] + " " + "<br />")
+  }

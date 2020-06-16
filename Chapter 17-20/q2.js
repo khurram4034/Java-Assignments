@@ -1,15 +1,8 @@
-var num1 = +prompt("Entery Any Number");
-var num2 = +prompt("Entery Any Number");
+var arr = [0, 1, 2, 3];
 
-if((num1, 10) > (num2, 10)) 
-  { 
-  alert("The larger of "+ num1+ " and "+ num2+ " is "+ num1+ ".");
-  }   
-else if((num2, 10) < (num1, 10)) 
-  {
-  alert("The larger of "+ num1+" and "+ num2+ " is "+ num2+ ".");
-  }                  
-else
-  {
-   alert("The values "+ num1+ " and "+num2+ " are equal.");
+for(var i=1; i< arr.length; i++){
+  for(var j=1; j< arr.length; j++){
+    document.write(arr[j] + " " )
   }
+  document.write(arr[i] + " " + "<br />")
+}
