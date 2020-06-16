@@ -794,21 +794,112 @@ for(i=0; i < student.length; i = (student+1)){
        document.write("Score of " + " " + student[2] + " " + " is " + scroe[2] + "." + " " + "Percentage :" + per3 + " % " + "<br>")
 }
 
+// Task 9:
 
 // Task 10:
 
+var arr = [320, 230, 480, 120];
 
+document.write("Score of Student :" )
+for(var i=0; i< arr.length; i++){
+       
+       document.write(arr[i] + " , ")
+}
+var rev = arr.reverse()
+document.write("<br />" + "<br />" + "Ordered Score of Student :")
+for(var i=0; i< rev.length; i++){
+       
+       document.write(arr[i] + " , ")
+}
+
+
+// Task 11:
+
+var arr = ['Karachi', 'Lahore', 'Islamabad', 'Quetta', 'Peshawar'];
+
+document.write("City List :" + "<br />")
+for(var i=0; i< arr.length; i++){
+       
+       document.write( arr[i] + " , ")
+}
+
+document.write("<br />" + "<br />" + "Selected City List :" + "<br />")
+var selectedCitys = arr.splice(2, 2,);
+
+document.write( selectedCitys + " , ")
+
+// Task 12:
+
+var arr = ['This', 'is', 'my', 'Cat'];
+
+
+for(var i=0; i< arr.length; i++){
+       
+       document.write(arr[i] + " ")
+}
+
+
+// Task 13:
+
+var arr = ['Keyboard', 'Mouse', 'Printer', 'Moniter'];
+
+
+for(var i=0; i< arr.length; i++){
+       document.write("Out" + "<br/>")
+       document.write(arr[i] + "<br/>")
+}
+
+
+// Task 14:
+
+var arr = ['Keyboard', 'Mouse', 'Printer', 'Moniter'];
+
+var spli = arr.reverse()
+for(var i=0; i< spli.length; i++){
+       document.write("Out" + "<br/>")
+       document.write(arr[i] + "<br/>")
+}
+
+
+// Task 15:
+
+var arr = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony & Haier'];
+
+document.write("<select>")
+for(var i=0; i< arr.length; i++){
+       document.write("<option>" + arr[i] + "</option>")
+}
+document.write("</select>")
 
 // Chapter # 17-20
 
 // Task 1:
 
+var arr = [0,1];
+
+for(var i=0; i< arr.length; i++){
+    for(var j=0; j< arr.length; j++){
+      document.write(arr[j] + " " )
+    }
+    document.write(arr[i] + " " + "<br />")
+  }
 
 // Task 2:
 
+var arr = [0, 1, 2, 3];
+
+for(var i=1; i< arr.length; i++){
+  for(var j=1; j< arr.length; j++){
+    document.write(arr[j] + " " )
+  }
+  document.write(arr[i] + " " + "<br />")
+}
 
 // Task 3:
 
+for(var i=1; i<= 10; i++){
+    document.write(i + " <br /> ")
+  }
 
 // Task 4:
 
@@ -823,17 +914,126 @@ for(var i=1; i<=10;  i++){
 
 // Task 5:
 
+var item = ["apple", "banana", "mango", "orange", "strawberry"];
 
+for(var i=0; i<item.length; i++){
+    document.write(item[i] + "<br />")
+    
+}
+document.write("<br />")
+
+var item2 = item.slice(0,5)
+
+for(var j=0; j<5; j++){
+    document.write(" element at index " + j + " is " + item2[j] +"<br />")
+    
+    
+}
 
 // Task 6:
 
+// Task 6 (a)
+
+document.write("Counting: " + "<br />"+ "<br />")
+
+for(var i=1; i<15; i++){
+  document.write(i + " , ")
+}
+document.write( "<br />"+ "<br />")
+// Task 6 (b)
+
+document.write("Reversve Counting: " + "<br />"+ "<br />")
+
+
+for(var i=10; i>0; i--){
+  document.write(i + " , ")
+}
+
+
+document.write( "<br />"+ "<br />")
+// Task 6 (c)
+
+document.write("Even : " + "<br />"+ "<br />")
+
+var even = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+for(var i=0; i<even.length; i++){
+  if(even[i] % 2 === 0){
+    document.write(even[i] + " , ")
+  }
+}
+
+
+document.write( "<br />"+ "<br />")
+// Task 6 (d)
+
+document.write("Odd : " + "<br />"+ "<br />")
+
+var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+let odd = arr.filter(n => n%2)
+
+document.write(odd + " , ")
+
+
+
+document.write( "<br />"+ "<br />")
+// Task 6 (e)
+
+document.write("Series : " + "<br />"+ "<br />")
+
+var even = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+for(var i=0; i<even.length; i++){
+  if(even[i] % 2 === 0){
+    document.write(even[i] + "k" + " , ")
+  }
+}
+
+
+// Task 7:
+
+var item = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+var search =  prompt("Welcome to ABC Bakari. What do you want to order Sir/Madam? " + " ");
+
+if (item.indexOf(search) !== -1){
+    alert(" Yes " + search + " Item is Avalible ")
+}
+else{
+    alert("WE Are Sorry " + search + " Item is Not Avalible ")
+}
 
 
 // Task 8:
 
+var array = [23, 53, 78, 91, 12];
+var largest= 0;
+
+document.write("Array Item : " + array + "<br />"+ "<br />")
+
+for (i=0; i<=largest;i++){
+    if (array[i]> largest) {
+        var largest=array[i];
+    }
+}
+
+document.write("The Largest Number is :" + " " + largest);
 
 // Task 9:
 
+var array = [23, 53, 78, 91, 12];
 
+document.write("Array Item : " + array + "<br />"+ "<br />")
+
+var min = Math.min.apply(Math, array)
+console.log(min)
+
+document.write("The Smallest Number is :" + " " + min);
 
 // Task 10:
+
+for(var i=1; i<= 20; i++){
+    document.write(i*5 + " , ")
+  }
+
