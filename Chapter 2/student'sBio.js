@@ -3,5 +3,5 @@ var age = "15 Year's Old";
 var certificate = "Certified Mobile Application Development";
 
 alert(studentName);
-alert(age)
-alert(certificate)
+alert(age);
+alert(certificate);
